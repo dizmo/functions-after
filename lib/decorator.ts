@@ -28,4 +28,4 @@ function _decorator(
     };
 }
 
-export default after;
+export default decorator;

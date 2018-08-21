@@ -20,14 +20,14 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 /* tslint:disable: max-classes-per-file no-console */
 var chai_1 = require("chai");
-var index_1 = require("../lib/index");
+var lib_1 = require("../lib");
 require("mocha");
 describe("index.decorator", function () {
     it("should exist", function () {
-        chai_1.expect(index_1.decorator).to.not.be.an("undefined");
+        chai_1.expect(lib_1.decorator).to.not.be.an("undefined");
     });
     it("should be a function", function () {
-        chai_1.expect(index_1.decorator).to.be.a("function");
+        chai_1.expect(lib_1.decorator).to.be.a("function");
     });
 });
 describe("index.decorator", function () {
@@ -47,7 +47,7 @@ describe("index.decorator", function () {
             return Class;
         }();
 
-        __decorate([index_1.decorator(function (value) {
+        __decorate([lib_1.decorator(function (value) {
             throw new Error("" + value);
         }), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Number)], Class.prototype, "method", null);
         try {
@@ -73,7 +73,7 @@ describe("index.decorator", function () {
             return Class;
         }();
 
-        __decorate([index_1.decorator(function (value) {
+        __decorate([lib_1.decorator(function (value) {
             chai_1.expect(value).to.eq(true);
         }), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Boolean)], Class.prototype, "method", null);
         chai_1.expect(new Class().method()).to.eq(undefined);
@@ -94,7 +94,7 @@ describe("index.decorator", function () {
             return Class;
         }();
 
-        __decorate([index_1.decorator(function (n) {
+        __decorate([lib_1.decorator(function (n) {
             return "" + (n + 1);
         }), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Number)], Class.prototype, "method", null);
         chai_1.expect(new Class().method()).to.eq("2");

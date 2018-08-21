@@ -1,6 +1,6 @@
 /* tslint:disable: max-classes-per-file no-console */
 import { expect } from "chai";
-import { decorator } from "../lib/index";
+import { decorator } from "../lib";
 
 import "mocha";
 

@@ -1,4 +1,3 @@
-import { after } from "./after";
 /**
  * Returns a method decorator taking a callback, which will be invoked
  * after the execution of the decorated function.
@@ -6,5 +5,5 @@ import { after } from "./after";
  * @param callback a handler to be invoked afterwards
  */
 export declare function decorator(callback: Function): MethodDecorator;
-export default after;
+export default decorator;
 //# sourceMappingURL=decorator.d.ts.map

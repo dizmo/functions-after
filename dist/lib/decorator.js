@@ -23,5 +23,5 @@ function _decorator(callback) {
         }
     };
 }
-exports.default = after_1.after;
+exports.default = decorator;
 //# sourceMappingURL=decorator.js.map
