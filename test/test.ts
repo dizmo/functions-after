@@ -3,7 +3,7 @@ import { after } from "../lib";
 
 import "mocha";
 
-describe("index.after", () => {
+describe("after", () => {
     it("should exist", () => {
         expect(after).to.not.be.an("undefined");
     });
@@ -12,7 +12,7 @@ describe("index.after", () => {
     });
 });
 
-describe("index.after", () => {
+describe("after", () => {
     it("should be invoked afterwards", () => {
         const f1 = (): number => {
             return 0;

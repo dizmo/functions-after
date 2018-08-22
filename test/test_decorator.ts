@@ -4,7 +4,7 @@ import { after } from "../lib";
 
 import "mocha";
 
-describe("index.decorator", () => {
+describe("after.decorator", () => {
     it("should exist", () => {
         expect(after.decorator).to.not.be.an("undefined");
     });
@@ -13,7 +13,7 @@ describe("index.decorator", () => {
     });
 });
 
-describe("index.decorator", () => {
+describe("after.decorator", () => {
     it("should be invoked afterwards", () => {
         class Class {
             @after.decorator((value: number) => {

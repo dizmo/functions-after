@@ -1,6 +1,8 @@
 export interface IAfterFunction {
     (fn: Function, callback: Function): Function;
-    decorator: (callback: Function) => MethodDecorator;
+}
+export interface IAfterFunction {
+    decorator: Function;
 }
 export declare const after: IAfterFunction;
 export default after;

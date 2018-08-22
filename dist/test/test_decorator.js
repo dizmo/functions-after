@@ -22,7 +22,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var chai_1 = require("chai");
 var lib_1 = require("../lib");
 require("mocha");
-describe("index.decorator", function () {
+describe("after.decorator", function () {
     it("should exist", function () {
         chai_1.expect(lib_1.after.decorator).to.not.be.an("undefined");
     });
@@ -30,7 +30,7 @@ describe("index.decorator", function () {
         chai_1.expect(lib_1.after.decorator).to.be.a("function");
     });
 });
-describe("index.decorator", function () {
+describe("after.decorator", function () {
     it("should be invoked afterwards", function () {
         var Class = function () {
             function Class() {

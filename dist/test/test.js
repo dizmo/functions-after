@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var chai_1 = require("chai");
 var lib_1 = require("../lib");
 require("mocha");
-describe("index.after", function () {
+describe("after", function () {
     it("should exist", function () {
         chai_1.expect(lib_1.after).to.not.be.an("undefined");
     });
@@ -12,7 +12,7 @@ describe("index.after", function () {
         chai_1.expect(lib_1.after).to.be.a("function");
     });
 });
-describe("index.after", function () {
+describe("after", function () {
     it("should be invoked afterwards", function () {
         var f1 = function f1() {
             return 0;
