@@ -1,4 +1,4 @@
-/* tslint:disable:ban-types callable-types */
+/* tslint:disable:ban-types */
 import { after as _after } from "./after";
 import { decorator as _decorator } from "./decorator";
 
