@@ -1,22 +1,22 @@
-/* tslint:disable: max-classes-per-file no-console */
+/* tslint:disable:max-classes-per-file */
 import { expect } from "chai";
-import { decorator } from "../lib";
+import { after } from "../lib";
 
 import "mocha";
 
 describe("index.decorator", () => {
     it("should exist", () => {
-        expect(decorator).to.not.be.an("undefined");
+        expect(after.decorator).to.not.be.an("undefined");
     });
     it("should be a function", () => {
-        expect(decorator).to.be.a("function");
+        expect(after.decorator).to.be.a("function");
     });
 });
 
 describe("index.decorator", () => {
     it("should be invoked afterwards", () => {
         class Class {
-            @decorator((value: number) => {
+            @after.decorator((value: number) => {
                 throw new Error(`${value}`);
             })
             public method(): number {
@@ -32,7 +32,7 @@ describe("index.decorator", () => {
     });
     it("should receive arguments", () => {
         class Class {
-            @decorator((value: boolean) => {
+            @after.decorator((value: boolean) => {
                 expect(value).to.eq(true);
             })
             public method(): boolean {
@@ -43,7 +43,7 @@ describe("index.decorator", () => {
     });
     it("should return a result", () => {
         class Class {
-            @decorator((n: number): string => {
+            @after.decorator((n: number): string => {
                 return `${n + 1}`;
             })
             public method(): number {

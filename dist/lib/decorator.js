@@ -1,7 +1,7 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-/* tslint:disable:ban-types trailing-comma */
+/* tslint:disable:ban-types */
 var after_1 = require("./after");
 /**
  * Returns a method decorator taking a callback, which will be invoked

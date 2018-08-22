@@ -1,5 +1,5 @@
 "use strict";
-/* tslint:disable:ban-types trailing-comma */
+/* tslint:disable:ban-types */
 
 Object.defineProperty(exports, "__esModule", { value: true });
 /**

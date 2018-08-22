@@ -1,4 +1,4 @@
-/* tslint:disable:ban-types trailing-comma */
+/* tslint:disable:ban-types */
 import { after } from "./after";
 
 /**
@@ -7,17 +7,13 @@ import { after } from "./after";
  *
  * @param callback a handler to be invoked afterwards
  */
-export function decorator(
-    callback: Function,
-): MethodDecorator {
+export function decorator(callback: Function): MethodDecorator {
     return _decorator(callback);
 }
 
-function _decorator(
-    callback: Function
-): MethodDecorator {
+function _decorator(callback: Function): MethodDecorator {
     return (
-        tgt: any, key: string|symbol, tpd?: PropertyDescriptor
+        tgt: any, key: string|symbol, tpd?: PropertyDescriptor,
     ): PropertyDescriptor|void => {
         if (tpd) {
             tpd.value = after(tpd.value, callback);

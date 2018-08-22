@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/dizmo/functions-after/badge.svg?branch=master)](https://coveralls.io/github/dizmo/functions-after?branch=master)
 
 # @dizmo/functions-after
-Returns a method decorator taking a callback, which will be invoked after the execution of the decorated function.
+Returns a function decorating an original function with a callback, which will be invoked after the execution of the original function. The return value of the original function will be handed over to the *after* callback as an argument, while the return value of the callback will become the overall result.
 
 ## Usage
 ### Install
@@ -17,27 +17,26 @@ let lib = require("@dizmo/functions-after");
 ### Examples
 ```typescript
 import { after } from "@dizmo/functions-after";
-
+```
+```typescript
 const f1 = (): number => {
     return 1;
 };
 const f2 = after(f1, (n: number): number => {
     return n + 1;
 });
-console.debug(f2());
+const expect = 2 === f2();
 ```
 ```typescript
-import { decorator as after } from "@dizmo/functions-after";
-
 class Class {
-    @after((n: number): number => {
+    @after.decorator((n: number): number => {
         return n + 1;
     })
     public method(): number {
         return 1;
     }
 }
-console.debug(new Class().method());
+const expect = 2 === new Class().method();
 ```
 ## Development
 ### Build

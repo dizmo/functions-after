@@ -1,10 +1,12 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+/* tslint:disable:ban-types callable-types */
 var after_1 = require("./after");
-exports.after = after_1.after;
 var decorator_1 = require("./decorator");
-exports.decorator = decorator_1.decorator;
-var after_2 = require("./after");
-exports.default = after_2.after;
+exports.after = function () {
+    after_1.after.decorator = decorator_1.decorator;
+    return after_1.after;
+}();
+exports.default = exports.after;
 //# sourceMappingURL=index.js.map

@@ -5,6 +5,7 @@
     "url": "https://github.com/hsk81"
   },
   "dependencies": {
+    "@types/node": "^10.5.2",
     "babel-polyfill": "^6.26.0"
   },
   "description": "after invocation handler",
