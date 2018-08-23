@@ -35,7 +35,7 @@
   "name": "@dizmo/functions-after",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dizmo/functions-after.git"
   },
   "scripts": {
     "build": "node ./cli/run-build.js",
