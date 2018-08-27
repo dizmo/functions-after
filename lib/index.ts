@@ -9,8 +9,8 @@ export interface IAfterFunction {
     decorator: Function;
 }
 export const after: IAfterFunction = (() => {
-    (_after as IAfterFunction).decorator = _decorator;
-    return _after as IAfterFunction;
+    (_after as any).decorator = _decorator;
+    return _after as any;
 })();
 
 export default after;
