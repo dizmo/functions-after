@@ -4,10 +4,7 @@
     "email": "hkarahan@dizmo.com",
     "url": "https://github.com/hsk81"
   },
-  "dependencies": {
-    "@types/node": "^10.12.1",
-    "babel-polyfill": "^6.26.0"
-  },
+  "dependencies": {},
   "description": "after invocation handler",
   "devDependencies": {
     "@types/chai": "^4.1.7",
