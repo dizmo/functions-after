@@ -12,8 +12,6 @@
     "@babel/preset-env": "^7.4.5",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.3",
     "exorcist": "^1.0.1",
