@@ -17,7 +17,7 @@ npm install @dizmo/functions-after --save
 ### Require
 
 ```javascript
-let lib = require("@dizmo/functions-after");
+const { after } = require("@dizmo/functions-after");
 ```
 
 ### Examples
