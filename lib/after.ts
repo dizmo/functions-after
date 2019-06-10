@@ -1,5 +1,3 @@
-/* tslint:disable:ban-types trailing-comma */
-
 /**
  * Returns a method decorator taking a callback, which will be invoked
  * after the execution of the decorated function.
@@ -18,5 +16,4 @@ export function after(
         );
     };
 }
-
 export default after;

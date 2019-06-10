@@ -1,4 +1,3 @@
-/* tslint:disable:max-classes-per-file */
 import { expect } from "chai";
 import { after } from "../lib";
 
