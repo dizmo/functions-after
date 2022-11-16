@@ -22,9 +22,9 @@ describe("after", () => {
         });
         try {
             f2();
-        } catch (err) {
-            expect(err.name).to.eq("Error");
-            expect(err.message).to.eq("0");
+        } catch (e: any) {
+            expect(e.name).to.eq("Error");
+            expect(e.message).to.eq("0");
         }
     });
     it("should receive arguments", () => {

@@ -24,9 +24,9 @@ describe("after.decorator", () => {
         }
         try {
             new Class().method();
-        } catch (error) {
-            expect(error.name).to.eq("Error");
-            expect(error.message).to.eq("0");
+        } catch (e: any) {
+            expect(e.name).to.eq("Error");
+            expect(e.message).to.eq("0");
         }
     });
     it("should receive arguments", () => {
